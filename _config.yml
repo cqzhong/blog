@@ -3,18 +3,20 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: cqzhong's blog
+subtitle: '曹庆中'
+description: '学如逆水行舟,不进则退。心似平原走马,易放难追。'
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: 曹庆中
+language: zh-Hans
+timezone:
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: https://www.cqzhong.cn
+root: /
+#permalink: :year/:month/:day/:title/
+permalink: :urlname/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -97,9 +99,40 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+# theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+# deploy:
+#   type: git
+#   repository:
+# #             coding: https://gitee.com/cqzhong/cqzhong.git
+# #            github: https://github.com/cqzhong/cqzhong.github.io
+#              coding: https://e.coding.net/apple-cn/hexosite/blog-site.git
+#   branch: master
+
+#二次元
+## https://github.com/EYHN/hexo-helper-live2d
+## https://github.com/xiazeyu/live2d-widget-models
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: live2d-widget-model-hijiki
+  display:
+    position: right #在屏幕上的显示位置
+    width: 260 #显示宽度
+    height: 420 #显示高度
+    hOffset: 0
+    vOffset: 100
+  mobile:
+    show: false #手机端是否显示
+    scale: 0.5
