@@ -8,7 +8,8 @@ subtitle: '曹庆中'
 description: '学如逆水行舟,不进则退。心似平原走马,易放难追。'
 keywords:
 author: 曹庆中
-language: zh-Hans
+# language: zh-Hans
+language: zh-CN
 timezone:
 
 # URL
@@ -100,7 +101,8 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: landscape
-theme: next
+# theme: next
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
